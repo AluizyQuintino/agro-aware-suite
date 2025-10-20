@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { IndicatorCard } from "@/components/IndicatorCard";
 import { Leaf, Droplets, Flame, CloudRain } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import dashboardMap from "@/assets/dashboard-map.jpg";
 
 const Dashboard = () => {
   return (
@@ -21,10 +22,12 @@ const Dashboard = () => {
         <div className="animate-fade-in">
           <h2 className="text-xl font-semibold text-foreground mb-4">Dashboard</h2>
           
-          <Card className="p-6 mb-6 shadow-soft bg-gradient-to-br from-primary/5 to-primary/10">
-            <div className="flex items-center justify-center h-48 rounded-lg bg-muted/50">
-              <p className="text-muted-foreground">Mapa Interativo</p>
-            </div>
+          <Card className="p-6 mb-6 shadow-soft bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+            <img 
+              src={dashboardMap} 
+              alt="Mapa interativo das áreas monitoradas" 
+              className="w-full h-48 object-cover rounded-lg"
+            />
           </Card>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
